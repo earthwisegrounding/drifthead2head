@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRIFT · Head-to-Head Board Game · Coming Summer 2028</title>
+  <meta name="description" content="DRIFT is a head-to-head board game for two players. Roll the dice, drift your car through the lanes, and race your rival to the finish. Coming summer 2028.">
+  <link rel="canonical" href="https://www.drifthead2head.com/">
+  <meta name="theme-color" content="#06080b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.drifthead2head.com/">
+  <meta property="og:title" content="DRIFT · Drift your way to the finish">
+  <meta property="og:description" content="A head-to-head board game for two players. Dice and drift. Coming summer 2028.">
+  <meta property="og:image" content="https://www.drifthead2head.com/media/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:video" content="https://www.youtube.com/watch?v=X_YCzFUGj7U">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="media/drift-logo.webp" type="image/webp">
+  <link rel="stylesheet" href="css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "DRIFT",
+    "description": "A head-to-head board game for two players. Roll the dice, drift through the lanes, race to the finish.",
+    "url": "https://www.drifthead2head.com/",
+    "numberOfPlayers": { "@type": "QuantitativeValue", "value": 2 },
+    "image": "https://www.drifthead2head.com/media/og-image.jpg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="topbar__mark" href="#top" aria-label="DRIFT home">
+      <img src="media/drift-logo.webp" alt="" width="1200" height="438">
+    </a>
+    <button class="btn btn--ghost btn--sm" type="button" data-trailer>
+      <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+      Watch trailer
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg" aria-hidden="true">
+        <source src="media/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <button class="hero__toggle" type="button" aria-pressed="false" aria-label="Pause background video">
+        <svg class="i-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 2.5h3v11H4zM9 2.5h3v11H9z" fill="currentColor"/></svg>
+        <svg class="i-play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+      </button>
+
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__logo">
+          <img src="media/drift-logo.webp" alt="DRIFT" width="1200" height="438" fetchpriority="high">
+        </h1>
+        <p class="hero__tag">Drift your way to the finish.</p>
+        <p class="hero__date">Coming summer&nbsp;2028</p>
+        <div class="hero__actions">
+          <button class="btn btn--chalk" type="button" data-trailer>
+            <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+            Watch the trailer
+          </button>
+          <a class="btn btn--ghost" href="#signup">Get launch updates</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMISE -->
+    <section class="premise" aria-labelledby="premise-title">
+      <div class="premise__copy">
+        <h2 id="premise-title" class="display">Two cars. One board. Every roll picks your&nbsp;line.</h2>
+        <p class="lede">DRIFT is a head-to-head board game for two players. Roll the dice, throw your car sideways through the lanes, and get to the finish before your rival&nbsp;does.</p>
+
+        <dl class="spec">
+          <div><dt>Players</dt><dd>2</dd></div>
+          <div><dt>Format</dt><dd>Head-to-head</dd></div>
+          <div><dt>You need</dt><dd>Dice &amp; nerve</dd></div>
+          <div><dt>Launch</dt><dd>Summer 2028</dd></div>
+        </dl>
+      </div>
+
+      <figure class="premise__media">
+        <video class="js-inview" muted loop playsinline preload="metadata" poster="media/dice.jpg" aria-label="Two glowing dice tumbling across wet asphalt">
+          <source src="media/dice-loop.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </section>
+
+    <!-- THE RACE (scroll-driven) -->
+    <section class="race" id="race" aria-labelledby="race-title">
+      <div class="race__stage">
+        <h2 id="race-title" class="visually-hidden">A lap of the DRIFT board</h2>
+
+        <svg class="race__svg" id="race-svg" role="img" aria-label="Top-down view of the DRIFT board: a three-lane track in blue, yellow and pink. Car 07 and car 02 race a lap as you scroll." preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="beam" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#fff3cf" stop-opacity=".42"/>
+              <stop offset="1" stop-color="#fff3cf" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="tail" r=".5">
+              <stop offset="0" stop-color="#ff2b2b" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ff2b2b" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <image id="race-board" x="0" y="0"/>
+          <g class="smoke" id="smoke"></g>
+          <g id="cars"></g>
+        </svg>
+
+        <div class="race__hud" aria-hidden="true">
+          <p class="race__leader" id="race-leader">Lights out</p>
+          <div class="race__meter"><span id="race-meter"></span></div>
+        </div>
+
+        <ol class="race__captions" aria-label="How a lap plays out">
+          <li class="is-on">Roll the dice.</li>
+          <li>Throw it sideways.</li>
+          <li>Hold your line.</li>
+          <li>Close the door.</li>
+          <li>Drift your way to the&nbsp;finish.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PICK YOUR CAR -->
+    <section class="garage" aria-labelledby="garage-title">
+      <h2 id="garage-title" class="display garage__title">Pick your car.</h2>
+      <div class="garage__split">
+        <figure class="car car--07">
+          <img src="media/car07.jpg" alt="Silver drift car number 07 with blue livery, parked in rain and smoke" loading="lazy" width="1920" height="1080">
+          <figcaption>
+            <span class="car__num" aria-hidden="true">07</span>
+            <span class="car__name">Car 07, blue corner</span>
+          </figcaption>
+        </figure>
+        <figure class="car car--02">
+          <img src="media/car02.jpg" alt="Black drift car number 02 with red livery, tires smoking on wet asphalt" loading="lazy" width="1920" height="1080">
+          <figcaption>
+            <span class="car__num" aria-hidden="true">02</span>
+            <span class="car__name">Car 02, red corner</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="garage__note">Same board, same dice, one finish line. Whoever reads the lanes better takes it.</p>
+    </section>
+
+    <!-- TRAILER -->
+    <section class="reel" aria-labelledby="reel-title">
+      <button class="reel__poster" type="button" data-trailer aria-labelledby="reel-title">
+        <img src="media/duel.jpg" alt="" loading="lazy" width="1920" height="1080">
+        <span class="reel__play" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="34" height="34"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+        </span>
+      </button>
+      <div class="reel__caption">
+        <h2 id="reel-title" class="display display--sm">Watch the trailer</h2>
+        <p>48 seconds of rain, smoke and dice. Sound on.</p>
+      </div>
+    </section>
+
+    <!-- SIGNUP -->
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <img class="signup__bg" src="media/pair.jpg" alt="" loading="lazy" width="1920" height="1080">
+      <div class="signup__inner">
+        <h2 id="signup-title" class="display">Get on the&nbsp;grid.</h2>
+        <p class="lede">DRIFT lands summer 2028. Leave your email and we'll tell you the day it's ready to&nbsp;order.</p>
+
+        <form class="signup__form" name="launch-updates" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+          <input type="hidden" name="form-name" value="launch-updates">
+          <p class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com">
+          </label>
+          <button class="btn btn--chalk" type="submit">Notify me</button>
+          <p class="signup__status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="signup__fine">One email at launch. No spam, and you can unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="media/drift-logo.webp" alt="DRIFT" width="1200" height="438" loading="lazy">
+    <p>Head-to-head board game for two players. Coming summer 2028.</p>
+    <p class="footer__small">&copy; 2026 DRIFT. DriftHead2Head.com</p>
+  </footer>
+
+  <dialog class="player" id="trailer" aria-label="DRIFT trailer">
+    <form method="dialog" class="player__bar">
+      <button class="player__close" type="submit" aria-label="Close trailer">
+        <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+    <div class="player__frame" data-youtube="X_YCzFUGj7U"></div>
+  </dialog>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>
