@@ -23,8 +23,8 @@ Then open http://localhost:4321.
 
 ## Email signup
 
-The form posts URL-encoded data to the form's `action` URL (or `/` if no action is set).
-GitHub Pages can't receive form posts, so set `action` on `<form class="signup__form">` in `index.html` to a form service endpoint (for example Formspree).
+The form posts to Formspree. Put your endpoint (`https://formspree.io/f/<id>`) in the `action` attribute of `<form class="signup__form">` in `index.html`. Signups show up in your Formspree dashboard.
+`_gotcha` is Formspree's spam honeypot.
 
 ## Media
 

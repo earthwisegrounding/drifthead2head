@@ -58,7 +58,7 @@
   dialog?.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
 
   /* ---------------------------------------------------------------
-     Signup form (Netlify Forms compatible: POST urlencoded to "/")
+     Signup form: POSTs to the form's action (a Formspree endpoint)
      --------------------------------------------------------------- */
   const form = document.querySelector(".signup__form");
   if (form) {
@@ -77,9 +77,11 @@
       status.dataset.state = "";
       status.textContent = "Saving…";
       try {
-        const res = await fetch(form.getAttribute("action") || "/", {
+        const endpoint = form.getAttribute("action");
+        if (!endpoint) throw new Error("no endpoint");
+        const res = await fetch(endpoint, {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" },
           body: new URLSearchParams(new FormData(form)).toString(),
         });
         if (!res.ok) throw new Error(String(res.status));
