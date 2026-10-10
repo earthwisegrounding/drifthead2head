@@ -28,4 +28,4 @@ The form posts to Formspree. Put your endpoint (`https://formspree.io/f/<id>`) i
 
 ## Media
 
-Everything in `media/` was cut from the trailer. The full trailer plays from YouTube (`X_YCzFUGj7U`).
+Everything in `media/` was cut from the trailer. The full trailer plays from YouTube (`wiKU0IjNOCs`).
